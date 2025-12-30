@@ -14,7 +14,6 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Oswald', 'sans-serif'],
         body: ['Roboto', 'sans-serif'],
       },
       colors: {
@@ -51,17 +50,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        uaz: {
-          green: "hsl(var(--uaz-green))",
-          "green-light": "hsl(var(--uaz-green-light))",
-          "green-dark": "hsl(var(--uaz-green-dark))",
-        },
-        sand: {
-          DEFAULT: "hsl(var(--sand))",
-          light: "hsl(var(--sand-light))",
-        },
-        khaki: "hsl(var(--khaki))",
-        "army-dark": "hsl(var(--army-dark))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -87,15 +75,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsla(152, 25%, 28%, 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsla(152, 25%, 28%, 0.5)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
     },
   },
