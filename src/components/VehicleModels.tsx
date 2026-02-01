@@ -11,6 +11,7 @@ const models = [
   { name: "УАЗ 452 «Буханка»", image: uaz452, slug: "uaz-452" },
   { name: "УАЗ Hunter", image: uazHunter, slug: "uaz-hunter" },
   { name: "УАЗ Patriot", image: uazPatriot, slug: "uaz-patriot" },
+  { name: "УАЗ Профи", image: "/placeholder.svg", slug: "uaz-profi" },
 ];
 
 const VehicleModels = () => {
@@ -21,7 +22,7 @@ const VehicleModels = () => {
           Запчасти для всех моделей <span className="text-secondary">УАЗ</span>
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
           {models.map((model) => (
             <Link 
               key={model.name}
