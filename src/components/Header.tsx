@@ -30,7 +30,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-foreground leading-tight">
-                Магазин469-452.ru
+                Магазин 469-452.ru
               </h1>
               <p className="text-xs text-secondary">
                 Запчасти УАЗ от А до Я
