@@ -35,7 +35,7 @@ const Categories = () => {
             <Link
               key={category.slug}
               to={category.slug === "tuning" ? "/tuning" : `/category/${category.slug}`}
-              className="text-base font-semibold text-foreground hover:text-secondary transition-colors py-1"
+              className="text-base font-semibold text-foreground hover:text-secondary transition-colors py-1 text-center"
             >
               {category.title}
             </Link>
