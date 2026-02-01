@@ -19,7 +19,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="text-center p-6 bg-card border border-border rounded-lg">
             <Clock className="h-10 w-10 text-secondary mx-auto mb-4" />
-            <h3 className="font-bold text-foreground text-xl mb-2">15+ лет</h3>
+            <h3 className="font-bold text-foreground text-xl mb-2">25 лет</h3>
             <p className="text-muted-foreground">опыта работы</p>
           </div>
           <div className="text-center p-6 bg-card border border-border rounded-lg">

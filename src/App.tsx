@@ -12,6 +12,7 @@ import Delivery from "./pages/Delivery";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Admin from "./pages/Admin";
+import Tuning from "./pages/Tuning";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/tuning" element={<Tuning />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
