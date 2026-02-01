@@ -5,13 +5,14 @@ import uaz469 from "@/assets/uaz-469.jpg";
 import uaz452 from "@/assets/uaz-452.jpg";
 import uazHunter from "@/assets/uaz-hunter.jpg";
 import uazPatriot from "@/assets/uaz-patriot.jpg";
+import uazProfi from "@/assets/uaz-profi.jpg";
 
 const models = [
   { name: "УАЗ 469", image: uaz469, slug: "uaz-469" },
   { name: "УАЗ 452 «Буханка»", image: uaz452, slug: "uaz-452" },
   { name: "УАЗ Hunter", image: uazHunter, slug: "uaz-hunter" },
   { name: "УАЗ Patriot", image: uazPatriot, slug: "uaz-patriot" },
-  { name: "УАЗ Профи", image: "/placeholder.svg", slug: "uaz-profi" },
+  { name: "УАЗ Профи", image: uazProfi, slug: "uaz-profi" },
 ];
 
 const VehicleModels = () => {
