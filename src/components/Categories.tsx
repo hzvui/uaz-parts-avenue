@@ -1,47 +1,42 @@
 import { Link } from "react-router-dom";
-import { Settings, Cog, Car, Zap, Wrench, Radio, CircleDot, Gauge } from "lucide-react";
 import { Button } from "./ui/button";
 
 const categories = [
-  { icon: Settings, title: "Двигатель", slug: "engine", count: "2500+" },
-  { icon: Cog, title: "Трансмиссия", slug: "transmission", count: "1800+" },
-  { icon: Car, title: "Ходовая часть", slug: "suspension", count: "2200+" },
-  { icon: Wrench, title: "Тормоза", slug: "brakes", count: "950+" },
-  { icon: Radio, title: "Электрика", slug: "electric", count: "1600+" },
-  { icon: Zap, title: "Кузов и салон", slug: "body", count: "1400+" },
-  { icon: Gauge, title: "Рулевое", slug: "steering", count: "800+" },
-  { icon: CircleDot, title: "Внедорожка", slug: "offroad", count: "600+" },
+  { title: "Двигатель", slug: "engine" },
+  { title: "Трансмиссия", slug: "transmission" },
+  { title: "Ходовая часть", slug: "suspension" },
+  { title: "Тормозная система", slug: "brakes" },
+  { title: "Электрика", slug: "electric" },
+  { title: "Кузов и салон", slug: "body" },
+  { title: "Рулевое управление", slug: "steering" },
+  { title: "Внедорожка", slug: "offroad" },
+  { title: "Система охлаждения", slug: "cooling" },
+  { title: "Топливная система", slug: "fuel" },
+  { title: "Выхлопная система", slug: "exhaust" },
+  { title: "Фильтры", slug: "filters" },
 ];
 
 const Categories = () => {
   return (
-    <section className="py-10 bg-background" id="catalog">
+    <section className="py-8 bg-muted/30" id="catalog">
       <div className="container">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl md:text-2xl font-bold text-foreground">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold text-foreground">
             Каталог запчастей
           </h2>
-          <Button variant="outline" size="sm" asChild>
-            <Link to="/catalog">Все категории</Link>
+          <Button variant="link" size="sm" asChild className="text-secondary hover:text-secondary/80">
+            <Link to="/catalog">Все категории →</Link>
           </Button>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-2">
           {categories.map((category) => (
             <Link
               key={category.slug}
               to={`/category/${category.slug}`}
-              className="group flex flex-col items-center text-center p-4 rounded-lg bg-card border border-border hover:border-primary hover:bg-muted transition-all duration-300"
+              className="text-sm text-foreground hover:text-secondary transition-colors py-1"
             >
-              <div className="w-14 h-14 rounded-full bg-muted border border-border flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-primary/10 transition-all">
-                <category.icon className="h-7 w-7 text-muted-foreground group-hover:text-secondary transition-colors" />
-              </div>
-              <span className="text-sm font-medium text-foreground group-hover:text-secondary transition-colors">
-                {category.title}
-              </span>
-              <span className="text-xs text-muted-foreground mt-1">
-                {category.count} товаров
-              </span>
+              {category.title}
             </Link>
           ))}
         </div>
